@@ -42,7 +42,12 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Local apps
-    'allears'
+    'allears',
+    'snippets',
+    'answers',
+    'questions',
+    'users',
+    'inbox'
 ]
 
 

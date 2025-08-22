@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import QuestionsModel, AnswersModel
-from .serializers import QuestionsModelSerializer, AnswersModelSerializer
 
 class QuestionsModelViewSet(viewsets.ModelViewSet):
     queryset = QuestionsModel.objects.all()
