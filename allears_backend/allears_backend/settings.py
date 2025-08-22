@@ -43,7 +43,6 @@ INSTALLED_APPS = [
 
     # Local apps
     'allears',
-    'snippets',
     'answers',
     'questions',
     'users',
