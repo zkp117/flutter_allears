@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,7 +10,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'All Ears',
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
+      theme: ThemeData(
+        primaryColor: const Color.fromARGB(255, 203, 66, 24),
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepOrange,
+          ).copyWith(
+            secondary: const Color.fromARGB(255, 203, 66, 24),
+            ),),
+
       home: const HomePage(),
     );
   }
@@ -25,7 +31,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("All Ears")),
       body: const Center(
-        child: Text("👋 Hello! Your Q&A app starts here."),
+        child: Text("👋 My Q&A app"),
       ),
     );
   }
